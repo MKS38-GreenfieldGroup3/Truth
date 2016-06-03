@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { signoutUser } from '../actions/index';
 import { Tabs, Tab, InkBar } from 'material-ui/Tabs';
-import { tealA400 } from 'material-ui/styles/colors';
+import { pink500 } from 'material-ui/styles/colors';
 
 class Header extends React.Component {
   render () {
@@ -16,7 +16,7 @@ class Header extends React.Component {
     }
 
     return (
-      <Tabs value={this.props.value} inkBarStyle= {{background: tealA400}} >
+      <Tabs value={this.props.value} inkBarStyle= {{background: pink500}} >
         <Tab value={2} style={style} label='Pending Polls' containerElement={<Link to='/pendingpolls' />}> </Tab>
         <Tab value={3} style={style} label='Results Polls' containerElement={<Link to='/resultspolls' />}> </Tab>
         <Tab value={4} style={style} label='Create Poll' containerElement={<Link to='/createpoll' />}> </Tab>
